@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="css/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="bg-white border-gray-200">
+        <div class="flex flex-wrap items-center justify-between mx-auto px-7 py-2">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="imges-appexy-ass/asset 0.png" class="h-8" alt="Flowbite Logo" />
+            </a>
+            <!---->
+            <div class="flex items-center justify-center space-x-2 rtl:space-x-reverse me-10">
+                <div class="items-center justify-center" id="navbar-user">
+                    <ul class="flex font-medium p-4">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-4 text-gray-900 rounded-sm hover:text-blue-700 dark:text-gray-500 dark:hover:text-green-500"
+                                aria-current="page" id="Home_button">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-4 text-gray-900 rounded-sm hover:text-blue-700 dark:text-gray-500  dark:hover:text-green-500"
+                                id="About_button">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-4 text-gray-900 rounded-sm hover:text-blue-700 dark:text-gray-500 dark:hover:text-green-500"
+                                id="Contact_button">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!---->
+            <div class="flex flex-wrap items-center">
+                <button type="button"
+                    class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                    id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                    data-dropdown-placement="bottom">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="w-8 h-8 rounded-full" src="imges-appexy-ass/profile-picture.jpg" alt="user photo">
+                </button>
+                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600"
+                    id="user-dropdown">
+                    <div class="px-4 py-3">
+                        <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
+                        <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
+                    </div>
+                    <ul class="py-2" aria-labelledby="user-menu-button">
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                out</a>
+                        </li>
+                    </ul>
+                </div>
+                <button id="theme-toggle" type="button"
+                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <!---->
+
+        </div>
+    </nav>
+    <!---->
+
+    <!--start home-->
+    <div id="home" class="block">
+        <section id="controls-carousel" class="relative w-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="imges-appexy-ass/fabian-irsara-67l-QujB14w-unsplash.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="imges-appexy-ass/testtwo.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="imges-appexy-ass/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="imges-appexy-ass/bg2.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="imges-appexy-ass/ales-nesetril-Im7lZjxeLhg-unsplash-EFNYJM67.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </section>
+        <!---->
+        <section class="bg-white dark:bg-gray-900 text-center py-9">
+            <span class="text-[48px]/[58px] text-gray-950 dark:text-slate-100">Tools</span>
+            <p class="dark:text-slate-100">Lorem ipsum dolor sit amet consectetur !</p>
+            <div class="container mx-auto py-10">
+                <div
+                    class="grid grid-cols-1 gap-8 md:gap-y-5 md:grid-cols-3 md:gap-1 lg:gap-3 rounded-lg p-4 md:p-6 text-center">
+                    <div
+                        class="flex flex-wrap flex-col items-center bg-white justify-center border border-black rounded-lg md:px-6 py-3  relative">
+
+
+
+                        <div class="bg-sky-600 rounded-full size-10 absolute -top-5 flex justify-center items-center">
+                            <i class="fa fa-anchor text-xl "></i>
+                        </div>
+
+
+
+                        <h1 class="mt-4 text-xl font-semibold text-gray-950">
+                            Product</h1>
+                        <div class="h-px bg-gray-950 w-10 my-2 mx-auto "></div>
+                        <p class="mt-2 mb-3 text-gray-950">Lorem ipsum dolor sit amet consectetur adipisicing.
+
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap flex-col items-center bg-white justify-center border border-black rounded-lg md:px-6 py-3  relative">
+
+
+
+                        <div class="bg-sky-600 rounded-full size-10 absolute -top-5 flex justify-center items-center">
+                            <i class="fa-solid fa-square-h"></i>
+                        </div>
+
+
+
+                        <h1 class="mt-4 text-xl font-semibold text-gray-950">
+                            Product</h1>
+                        <div class="h-px bg-gray-950 w-10 my-2 mx-auto "></div>
+                        <p class="mt-2 mb-3 text-gray-950">Lorem ipsum dolor sit amet consectetur adipisicing.
+
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap flex-col items-center bg-white justify-center border border-black rounded-lg md:px-6 py-3  relative">
+
+                        <div class="bg-sky-600 rounded-full size-10 absolute -top-5 flex justify-center items-center">
+                            <i class="fa-solid fa-jar-wheat"></i>
+                        </div>
+
+                        <h1 class="mt-4 text-xl font-semibold text-gray-950">
+                            Product</h1>
+                        <div class="h-px bg-gray-950 w-10 my-2 mx-auto "></div>
+                        <p class="mt-2 mb-3 text-gray-950">Lorem ipsum dolor sit amet consectetur adipisicing.
+
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap flex-col items-center bg-white justify-center border border-black rounded-lg md:px-6 py-3  relative">
+
+
+
+                        <div class="bg-sky-600 rounded-full size-10 absolute -top-5 flex justify-center items-center">
+                            <i class="fa-solid fa-water-ladder"></i>
+                        </div>
+
+
+
+                        <h1 class="mt-4 text-xl font-semibold text-gray-950">
+                            Product</h1>
+                        <div class="h-px bg-gray-950 w-10 my-2 mx-auto "></div>
+                        <p class="mt-2 mb-3 text-gray-950">Lorem ipsum dolor sit amet consectetur adipisicing.
+
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap flex-col items-center bg-white justify-center border border-black rounded-lg md:px-6 py-3  relative">
+
+
+
+                        <div class="bg-sky-600 rounded-full size-10 absolute -top-5 flex justify-center items-center">
+                            <i class="fa-solid fa-icicles"></i>
+                        </div>
+
+
+
+                        <h1 class="mt-4 text-xl font-semibold text-gray-950">
+                            Product</h1>
+                        <div class="h-px bg-gray-950 w-10 my-2 mx-auto "></div>
+                        <p class="mt-2 mb-3 text-gray-950">Lorem ipsum dolor sit amet consectetur adipisicing.
+
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap flex-col items-center bg-white justify-center border border-black rounded-lg md:px-6 py-3  relative">
+
+
+
+                        <div class="bg-sky-600 rounded-full size-10 absolute -top-5 flex justify-center items-center">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+
+
+
+                        <h1 class="mt-4 text-xl font-semibold text-gray-950">
+                            Product</h1>
+                        <div class="h-px bg-gray-950 w-10 my-2 mx-auto "></div>
+                        <p class="mt-2 mb-3 text-gray-950">Lorem ipsum dolor sit amet consectetur adipisicing.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--end home-->
+
+    <!--start About-->
+    <section class=" hidden bg-white dark:bg-gray-950 shadow-inner shadow-gray-500" id="about">
+        <div class="mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-7  rounded-lg p-6 md:p-6">
+
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img src="imges-appexy-ass/1.jpg" class="h-56 w-full object-cover mx-auto" />
+                    <div class="bg-white p-4 sm:p-6">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Item 1</h3>
+                        <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
+                            This is the first card.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img src="imges-appexy-ass/2.jpg" class="h-56 w-full object-cover mx-auto" />
+                    <div class="bg-white p-4 sm:p-6">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Item 2</h3>
+                        <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
+                            This is the second card.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img src="imges-appexy-ass/3.jpg" class="h-56 w-full object-cover mx-auto" />
+                    <div class="bg-white p-4 sm:p-6">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Item 3</h3>
+                        <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
+                            This is the third card.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img src="imges-appexy-ass/4.jpg" class="h-56 w-full object-cover mx-auto" />
+                    <div class="bg-white p-4 sm:p-6">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Item 4</h3>
+                        <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
+                            This is the fourth card.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img src="imges-appexy-ass/5.jpg" class="h-56 w-full object-cover mx-auto" />
+                    <div class="bg-white p-4 sm:p-6">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Item 5</h3>
+                        <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
+                            This is the fifth card.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img src="imges-appexy-ass/6.jpg" class="h-56 w-full object-cover mx-auto" />
+                    <div class="bg-white p-4 sm:p-6">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Item 6</h3>
+                        <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
+                            This is the sixth card.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img src="imges-appexy-ass/7.webp" class="h-56 w-full object-cover mx-auto" />
+                    <div class="bg-white p-4 sm:p-6">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Item 7</h3>
+                        <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
+                            This is the seventh card.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img src="imges-appexy-ass/8.webp" class="h-56 w-full object-cover mx-auto" />
+                    <div class="bg-white p-4 sm:p-6">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Item 8</h3>
+                        <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
+                            This is the eighth card.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img src="imges-appexy-ass/9.jpg" class="h-56 w-full object-cover mx-auto" />
+                    <div class="bg-white p-4 sm:p-6">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Item 9</h3>
+                        <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
+                            This is the ninth card.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--end About-->
+
+    <!--start Contact-->
+    <section class=" hidden bg-white dark:bg-gray-950 shadow-inner shadow-gray-500 text-center p-6" id="Contact">
+
+        <h2 class="text-4xl font-bold  dark:text-white text-gray-950"> Contact Us</h2>
+        <p class="text-gray-600 py-5">We'd love to hear from you! Fill out the form below and we'll get back to you as
+            soon
+            as possible.</p>
+        <div class="w-[675px] bg-white mx-auto shadow-lg rounded-lg shadow-gray-400 p-6">
+            <div class="py-3 text-left">
+                <label for="UserEmail" class="block font-medium text-gray-950 pb-1 text-sm"> Your Name
+                </label>
+                <input type="email" id="UserEmail" placeholder="Enter your name"
+                    class="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
+            </div>
+            <div class="py-3 text-left">
+                <label for="UserEmail" class="block font-medium text-gray-950 pb-1 text-sm"> Email Address
+                </label>
+                <input type="email" id="UserEmail" placeholder="Enter your email" Your Message
+                    class="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
+            </div>
+            <div class="py-3 text-left">
+                <label for="UserEmail" class="block font-medium text-gray-950 pb-1 text-sm"> Your
+                    Message</label>
+                <textarea type="email" id="UserEmail" placeholder="Write your Message here..." Your Message rows="4"
+                    class="mt-1 w-full h-40 rounded-md border-gray-200 shadow-sm sm:text-sm"></textarea>
+            </div>
+            <button class="bg-green-600 rounded-md py-2 px-5 text-white">Send Message</button>
+        </div>
+    </section>
+    <!--end Contact-->
+
+
+
+
+
+    <!---->
+    <footer class="bg-[#212529] px-12 py-12 flex justify-between items-center w-full">
+        <div>
+            <img src="imges-appexy-ass/asset 18.png">
+        </div>
+        <div class="me-2">
+            <ul class="flex gap-4">
+                <li><a href="#"><i class="fa-brands fa-facebook text-white text-base leading-4"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter text-white text-base leading-4"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin text-white text-base leading-4"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube text-white text-base leading-4"></i></a></li>
+            </ul>
+        </div>
+
+
+
+    </footer>
+    <!---->
+    <script src=" ../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
